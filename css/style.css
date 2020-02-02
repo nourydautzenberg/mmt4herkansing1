@@ -1,0 +1,482 @@
+body {
+    color: #fff;
+    background-image: linear-gradient(to bottom right, black, green);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Header */
+
+#header-bg {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header-title {
+    font-size: 6em;
+    top: 45%;
+    position: relative;
+}
+
+.arrow-down {
+    width: 100%;
+    top: 80%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.arrow-down::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 3s arrow infinite ease;
+    animation: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+    0%, 100% {
+        top: 50px;
+    }
+    50% {
+        top: 100px;
+    }
+}
+
+@keyframes arrow {
+    0%, 100% {
+        top: 50px;
+    }
+    50% {
+        top: 100px;
+    }
+}
+
+/* Content */
+
+.heading-style {
+    font-size: 4em;
+    margin-top: 50px;
+}
+
+.paragraph-style {
+    width: 50%;
+    margin: 25px auto;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.trailers {
+    width: 500px;
+    height: 500px;
+}
+
+/* Accordion Styling */
+
+.acc-info-container {
+	margin: 25px auto;
+}
+.acc-info-toggle {
+	position: relative;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.acc-none {
+	display: none;
+	padding: 20px;
+    overflow: hidden;
+}
+
+.acc-series-container {
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Grid Styling */
+
+#actors-container {
+    width: 80%;
+    margin: 25px auto;
+}
+
+.grid-tile {
+    margin: 0 auto;
+    width: 31%;
+    height: 500px;
+    margin: 25px 0 0 25px;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+#grid-tile-bg1 {
+    background-image: url(../img/actor-walter-white.jpg);
+}
+
+#grid-tile-bg2 {
+    background-image: url(../img/actor-skyler-white.jpg);
+}
+
+#grid-tile-bg3 {
+    background-image: url(../img/actor-jesse-pinkman.jpg);
+}
+
+#grid-tile-bg4 {
+    background-image: url(../img/actor-hank-schrader.jpg);
+}
+
+#grid-tile-bg5 {
+    background-image: url(../img/actor-gustavo-fring.jpg);
+}
+
+#grid-tile-bg6 {
+    background-image: url(../img/actor-lydia-rodarte-quayle.jpg);
+}
+
+#grid-tile-bg7 {
+    background-image: url(../img/actor-marie-schrader.jpg);
+}
+
+#grid-tile-bg8 {
+    background-image: url(../img/actor-mike-ehrmantraut.jpg);
+}
+
+#grid-tile-bg9 {
+    background-image: url(../img/actor-saul-goodman.jpg);
+}
+
+
+/* Grid Hover Styling */
+
+#grid-tile-bg1:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-walter-white.jpg);
+}
+
+#grid-tile-bg2:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-skyler-white.jpg);
+}
+
+#grid-tile-bg3:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-jesse-pinkman.jpg);
+}
+
+#grid-tile-bg4:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-hank-schrader.jpg);
+}
+
+#grid-tile-bg5:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-gustavo-fring.jpg);
+}
+
+#grid-tile-bg6:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-lydia-rodarte-quayle.jpg);
+}
+
+#grid-tile-bg7:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-marie-schrader.jpg);
+}
+
+#grid-tile-bg8:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-mike-ehrmantraut.jpg);
+}
+
+#grid-tile-bg9:hover {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0) 100%), url(../img/actor-saul-goodman.jpg);
+}
+
+
+.grid-tile-paragraph {
+    visibility: hidden;
+    width: 80%;
+    margin: 25px auto;
+    font-size: 0.9em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.grid-tile:hover .grid-tile-paragraph{
+    visibility: visible; 
+}
+
+.grid-tile-heading {
+    padding: 25px;
+    font-size: 2em;
+    visibility: hidden;
+}
+
+.grid-tile:hover .grid-tile-heading {
+    visibility: visible;
+}
+
+.grid-tile:hover {
+    cursor: auto;
+}
+
+.place-left {
+    float: left;
+}
+
+/* Audio */
+
+.audioplayer {
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}
+
+#audio {
+    padding-top: 25px;
+    position: relative;
+    display: none;
+    font-size: 1.5em;
+    top: 10%;
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 50%;
+}
+
+.button-style {
+    border-radius: 50px;
+    width: 250px;
+    height: 65px;
+    position: absolute;
+    font-size: 1.4em;
+    background-color: #fff;
+    color: green;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.btn1-pos {
+    top: 5%;
+    -webkit-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    transform: translateY(-5%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.btn2-pos {
+    top: 110%;
+    -webkit-transform: translateY(-110%);
+    -ms-transform: translateY(-110%);
+    transform: translateY(-110%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.button-style:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* Videos */
+
+video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+}
+
+#play-video {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.play-pause {
+    font-size: 1.25em;
+    padding: 10px 25px 10px 25px;
+    font-family: 'Montserrat';
+    margin: 25px 0 25px 0;
+    background-color: #0076FF;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+}
+
+/* P5 Slider */
+
+#header-sketch {
+    background: #0076FF;
+    height: 300px;
+    text-align: center;
+}
+
+.text-padding {
+    padding-top: 50px;
+}
+
+#defaultCanvas0 {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.slidecontainer {
+    width: 100%; 
+}
+
+.hide-overlay {
+    display: none;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1600px) {
+    #audio {
+        font-size: 1.3em;
+    }
+
+    .button-style {
+        width: 200px;
+        height: 50px;
+        font-size: 1.1em;
+    }
+
+    #header-title {
+        font-size: 5em;
+    }
+
+    .arrow-down::after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .paragraph-style {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .grid-tile {
+        width: 47%;
+    }
+
+    .grid-tile-heading {
+        font-size: 1.7em;
+        margin: 0 auto;
+    }
+
+    .grid-tile-paragraph {
+        font-size: 0.9em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-tile {
+        width: 46%;
+    }
+
+    .grid-tile-paragraph {
+        font-size: 0.8em;
+    }
+
+    #header-title {
+        font-size: 4em;
+    }
+
+    .heading-style {
+        font-size: 3em;
+    }
+
+    .paragraph-style {
+        font-size: 1.2em;
+    }
+
+    #audio {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-tile {
+        width: 93%;
+    }
+
+    .play-pause {
+        font-size: 0.9em;
+        padding: 8px 10px 8px 10px;
+    }
+
+    .heading-style {
+        font-size: 2.5em;
+    }
+
+    #header-title {
+        font-size: 3em;
+    }
+
+    .arrow-down::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .paragraph-style {
+        font-size: 1em;
+    }
+
+    .arrow-down::after {
+        border-right: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hide-overlay {
+        display: block;
+    }
+
+    #sketch-holder {
+        display: none;
+    }
+
+    #defaultCanvas0 {
+        display: none;
+    }
+
+    .grid-tile {
+        height: 350px;
+        font-size: 0.9em;
+        width: 85%;
+    }
+
+    .paragraph-style {
+        font-size: 0.8em;
+        width: 70%;
+    }
+}
